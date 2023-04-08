@@ -1,0 +1,80 @@
+:root {
+  --color-primary: #ffffff;
+  --color-white-secondary: whitesmoke;
+  --color-main-text: black;
+  --color-text-grey: #606770;
+  --color-bcg: aliceblue;
+}
+
+.profile {
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-text-grey);
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 5px 0px rgb(140 140 161 / 78%);
+  -moz-box-shadow: 1px 1px 5px 0px rgb(140 140 161 / 78%);
+  box-shadow: 1px 1px 5px 0px rgb(140 140 161 / 78%);
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid var(--color-text-grey);
+}
+
+.avatar {
+  max-width: 150px;
+  height: 100%;
+  margin: 0 auto;
+  background-color: var(--color-bcg);
+  border-radius: 80px;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.tag {
+  color: var(--color-text-grey);
+}
+
+.location {
+  font-size: 15px;
+  color: var(--color-text-grey);
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--color-white-secondary);
+}
+
+.statsItem {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 25px 15px;
+  min-width: 68px;
+}
+.statsItem:not(:last-child) {
+  border-right: 1px solid var(--color-text-grey);
+}
+
+.label {
+  display: flex;
+  justify-content: center;
+  color: var(--color-text-grey);
+}
+
+.quantity {
+  composes: label;
+  font-weight: 700;
+  color: var(--color-main-text);
+}
