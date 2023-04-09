@@ -3,7 +3,23 @@ import styled from '@emotion/styled';
 export const FriendsListItem = styled.li`
   display: flex;
   align-items: center;
-  width: 100%;
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  border: 1px solid var(--color-text-grey);
+  border-radius: 10px;
+  cursor: pointer;
+
+  -webkit-box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.75);
+
+  &:hover {
+    -webkit-box-shadow: 0px -2px 9px 6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px -2px 9px 6px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px -2px 9px 6px rgba(0, 0, 0, 0.75);
+  }
 `;
 
 const setStatusBgColor = props => {
