@@ -22,7 +22,7 @@
 
 .avatar {
   max-width: 150px;
-  height: 100%;
+  height: 150px;
   margin: 0 auto;
   background-color: var(--color-bcg);
   border-radius: 80px;
