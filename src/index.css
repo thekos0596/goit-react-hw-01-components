@@ -6,6 +6,9 @@
   --color-main-text: black;
   --color-text-grey: #606770;
   --color-bcg: aliceblue;
+
+  --color-bcg-online-status: green;
+  --color-bcg-offline-status: red;
 }
 
 body {
